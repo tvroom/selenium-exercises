@@ -14,3 +14,4 @@ elem=selenium.find_element(:css, ".sel_header")
 
 ok("Selenium Test Header" == elem.text, "Matches expected value for Header")
 selenium.quit
+done_testing
