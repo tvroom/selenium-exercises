@@ -29,11 +29,14 @@
       </header>
       <section>
 		<script type="text/javascript">
-			document.write('<h2>User status</h2>');
-			if(window.location.href.match(/password=foobar/) && window.location.href.match(/username=bob/)) {
-				document.write('<h2 class="user">bob</h2>');
+			document.write('<h1>User status</h1>');
+			if(window.location.href.match(/password=foobaz/) && window.location.href.match(/username=bob/)) {
+				document.write('Current user: <h2 class="user">bob</h2>');
 			} else {
-				document.write('<h2 class="user">guest</h2>');
+				document.write('Current user: <h2 class="user">guest</h2>');
+				if(window.location.href.match(/password=/)) {
+					document.write('<h2 style="color:red">Incorrect Password</h2>');
+				}
 			}
 		</script>
       </section>
