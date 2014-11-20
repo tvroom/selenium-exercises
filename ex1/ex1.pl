@@ -8,4 +8,5 @@ my $elem = $driver->find_element('h3.sel_header','css');
 my $text = $elem->get_text();
 
 ok($text eq "Selenium Test Header", "Header text matches 'selenium Test Header");
+$driver->quit();
 done_testing();
