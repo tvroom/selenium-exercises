@@ -28,8 +28,9 @@
         </ul>
       </header>
       <section>
-		<script>
-			if(window.location.href.match(/password=foobar/) && window.location.href.match(/username=bob/) {
+		<script type="text/javascript">
+			document.write('<h2>User status</h2>');
+			if(window.location.href.match(/password=foobar/) && window.location.href.match(/username=bob/)) {
 				document.write('<h2 class="user">bob</h2>');
 			} else {
 				document.write('<h2 class="user">guest</h2>');
